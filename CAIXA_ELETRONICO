@@ -1,0 +1,125 @@
+pacote  caixa_eletronico;
+
+import  java.util.Scanner ;
+
+public  class  caixa_eletronico;
+
+    public  static  void  main ( String [] args ) {
+
+        cpfv longo , cpf =  123and;
+        int senhav, senha =  123 ;
+        menu int =  0 , menuf;
+        saldo flutuante =  1000,00f ;
+        int contador =  0 , contador2 =  0 ;
+        int tudo =  0 ;
+        float deposito, saque;
+
+        Scanner ler =  novo  Scanner ( Sistema . In);
+
+        enquanto (tudo ! =  1 ) {
+
+            Sistema . para fora . print ( "----Insira seu CPF:----");
+            cpfv = ler . nextLong ();
+
+            if (cpf ! = cpfv) {
+
+                Sistema . para fora . println ( " " );
+                Sistema . para fora . println ( " ----Tela de acesso não permitida:----");
+                Sistema . saída ( 0 );
+
+            } else {
+
+                Sistema . para fora . imprimir ( " ----Digite Sua Senha:----");
+                senhav = ler . nextInt ();
+
+                    faça {                          
+                        contador ++ ;
+                        Sistema . para fora . println ( " " );
+                        Sistema . para fora . println (( 3  - contador) +  " TENTATIVA (S) RESTANTES! " );
+                        Sistema . para fora . imprimir ( " Digite sua senha: " );
+                        senhav = ler . nextInt ();
+                        
+                        if (contador ==  2 ) {
+                            Sistema . para fora . println ( " " );
+                            Sistema . para fora . println ( " ----SUA CONTA FOI BLOQUEADA----");
+                            Sistema . saída ( 0 );
+                        }
+                        
+                    } enquanto (senha ! = senhav);
+
+                enquanto (menu <  0  || menu >  3 ) {
+
+                    Sistema . para fora . println ( " " );
+                    Sistema . para fora . println ( " -----menu----");
+                    Sistema . para fora . println ( " Aperte 1 para: Saldo. " );
+                    Sistema . para fora . println ( " Aperte 2 para: Deposito. " );
+                    Sistema . para fora . println ( " Aperte 3 para: Saque. " );
+                    Sistema . para fora . println ( " Aperte 0 para: Sair. " );
+                    Sistema . para fora . imprimir ( " Escolha: " );
+                    menu = ler . nextInt ();
+
+                    switch (menu) {
+
+                        caso  1 :
+                            Sistema . para fora . println ( " " );
+                            Sistema . para fora . println ( " Seu saldo é de: "  + saldo);
+                            pausa ;
+
+                        caso  2 :
+                            Sistema . para fora . println ( " " );
+                            Sistema . para fora . println ( " Insira o valor do deposito: " );
+                            deposito = ler . nextFloat ();
+                            Sistema . para fora . println ( " " );
+                            Sistema . para fora . println ( " Seu saldo apÃ³s o deposito Ã © de: "  + (saldo + deposito));
+                            saldo = saldo + depósito;
+                            pausa ;
+
+                        caso  3 :
+                            Sistema . para fora . println ( " " );
+                            Sistema . para fora . println ( " Insira o valor do saque: " );
+                            saque = ler . nextFloat ();
+                            Sistema . para fora . println ( " " );
+                            Sistema . para fora . println ( " Seu saldo apÃ³s o saque Ã © de: "  + (saldo - saque));
+                            saldo = saldo - saque;
+                            pausa ;
+
+                        caso  0 :
+                            tudo =  1 ;
+                            pausa ;
+
+                        padrão :
+                            Sistema . para fora . println ( " " );
+                            Sistema . para fora . println ( " OPERAÇÃO INVALIDA " );
+                    }
+
+                    para ( int l =  0 ; l <  10 ; l ++ ) {
+
+                        Sistema . para fora . println ( " " );
+                        Sistema . para fora . println ( " Aperte 1 para: Nova operação. " );
+                        Sistema . para fora . println ( " Aperte 0 para: Sair. " );
+                        Sistema . para fora . imprimir ( " Escolha: " );
+                        menuf = ler . nextInt ();
+                        Sistema . para fora . println ( " " );
+
+                        switch (menuf) {
+
+                            caso  1 :
+                                h =  0 ;
+                                l =  10 ;
+                                pausa ;
+
+                            caso  0 :
+                                tudo =  0 ;
+                                h =  10 ;
+                                l =  10 ;
+                                pausa ;
+
+                            padrão :
+                                l =  0 ;
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
